@@ -166,10 +166,15 @@ h1 {
   
   .tagline {
     font-size: min(7vw, 75px);
+    margin-top: 10px;
   }
   
   .click-text {
     font-size: min(3vw, 24px);
+  }
+  
+  .text-container {
+    top: 47%; /* Move entire text container higher up from 50% */
   }
 }
 
