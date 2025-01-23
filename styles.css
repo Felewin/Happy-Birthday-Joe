@@ -216,3 +216,33 @@ h1 {
     transform: scale(1.1); /* Increase size by 10% at peak */
   }
 }
+
+/* Make the sun glow */
+.sun-container circle {
+  animation: glow 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.3));
+}
+
+@keyframes glow {
+  0%, 100% { 
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.3)); 
+  }
+  50% { 
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.5)); 
+  }
+}
+
+/* Make the flag wave */
+.golf-elements path {
+  transform-origin: left;
+  animation: wave 4s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% { 
+    transform: skewY(0deg); 
+  }
+  50% { 
+    transform: skewY(-10deg); 
+  }
+}
