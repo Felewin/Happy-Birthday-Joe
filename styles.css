@@ -251,3 +251,13 @@ h1 {
     transform: skewY(-10deg); 
   }
 }
+
+@keyframes flagRainbow {
+  0% { fill: #FF0000; }
+  17% { fill: #FF8800; }
+  33% { fill: #FFD700; }
+  50% { fill: #00FF00; }
+  67% { fill: #0088FF; }
+  83% { fill: #8800FF; }
+  100% { fill: #FF0000; }
+}
